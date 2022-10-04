@@ -17,12 +17,12 @@ public class Client {
 
         Context context = new Context();
 
-        PairFirst pairFirst = new PairFirst();
-        PairSecond pairSecond = new PairSecond();
+        StrategyCompareText strategyCompareText = new StrategyCompareText();
+        StrategyCompareNumber strategyCompareNumber = new StrategyCompareNumber();
 
         System.out.println("Aufsteigend nach zahl");
 
-        context.setPair(pairSecond);
+        context.setPair(strategyCompareNumber);
         context.sort(pairList);
         pairList.forEach(System.out::println);
 
@@ -30,7 +30,7 @@ public class Client {
         System.out.println("--------------------------------");
         System.out.println("Absteigend nach text");
 
-        context.setPair(pairFirst);
+        context.setPair(strategyCompareText);
         context.sort(pairList);
         pairList.forEach(System.out::println);
 

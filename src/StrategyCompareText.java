@@ -1,7 +1,7 @@
 import java.util.Comparator;
 import java.util.List;
 
-public class PairFirst implements Comparator<Pair> {
+public class StrategyCompareText implements Comparator<Pair> {
 
 
     //1) Aufsteigen nach Zahl

@@ -1,7 +1,6 @@
 import java.util.Comparator;
-import java.util.List;
 
-public class PairSecond implements Comparator<Pair> {
+public class StrategyCompareNumber implements Comparator<Pair> {
 
     @Override
     public int compare(Pair o1, Pair o2) {
